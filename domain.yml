@@ -1,0 +1,31 @@
+version: "3.1"
+
+intents:
+  - ask_next_train
+  - ask_last_train
+
+slots:
+  station_name:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: station_name
+
+entities:
+  - station_name
+
+responses:
+  utter_next_train:
+  - text: "The next train is at {time}."
+
+  utter_last_train:
+  - text: "The last train is at {time}."
+
+actions:
+  - answer_next_train_question
+  - answer_last_train_question
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

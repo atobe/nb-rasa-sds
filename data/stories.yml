@@ -1,0 +1,11 @@
+version: "3.1"
+
+stories:
+- story: happy path
+  steps:
+  - intent: ask_next_train
+  - action: answer_next_train_question
+- story: happy path 2
+  steps:
+  - intent: ask_last_train
+  - action: answer_last_train_question

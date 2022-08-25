@@ -1,0 +1,109 @@
+version: "3.1"
+
+nlu:
+- intent: ask_next_train
+  examples: |
+    - when is the next train to [12th St. Oakland City Center]{"entity":"station_name"}
+    - when is the next train to [16th St. Mission]{"entity":"station_name"}
+    - last train to [19th St. Oakland]{"entity":"station_name"}
+    - when is the next train to [24th St. Mission]{"entity":"station_name"}
+    - when is the next train to [Antioch]{"entity":"station_name"}
+    - last train to [Ashby]{"entity":"station_name"}
+    - when is the next train to [Balboa Park]{"entity":"station_name"}
+    - when is the next train to [Bay Fair]{"entity":"station_name"}
+    - last train to [Berryessa North San Jose]{"entity":"station_name"}
+    - last train to [Castro Valley]{"entity":"station_name"}
+    - when is the next train to [Civic Center UN Plaza]{"entity":"station_name"}
+    - last train to [Coliseum]{"entity":"station_name"}
+    - last train to [Colma]{"entity":"station_name"}
+    - when is the next train to [Concord]{"entity":"station_name"}
+    - last train to [Daly City]{"entity":"station_name"}
+    - when is the next train to [Downtown Berkeley]{"entity":"station_name"}
+    - last train to [Dublin Pleasanton]{"entity":"station_name"}
+    - when is the next train to [El Cerrito del Norte]{"entity":"station_name"}
+    - when is the next train to [El Cerrito Plaza]{"entity":"station_name"}
+    - when is the next train to [Embarcadero]{"entity":"station_name"}
+    - last train to [Fremont]{"entity":"station_name"}
+    - last train to [Fruitvale]{"entity":"station_name"}
+    - last train to [Glen Park]{"entity":"station_name"}
+    - last train to [Hayward]{"entity":"station_name"}
+    - when is the next train to [Lafayette]{"entity":"station_name"}
+    - last train to [Lake Merritt]{"entity":"station_name"}
+    - when is the next train to [MacArthur]{"entity":"station_name"}
+    - when is the next train to [Millbrae]{"entity":"station_name"}
+    - last train to [Milpitas]{"entity":"station_name"}
+    - when is the next train to [Montgomery St]{"entity":"station_name"}
+    - last train to [North Berkeley]{"entity":"station_name"}
+    - last train to [North Concord/Martinez]{"entity":"station_name"}
+    - when is the next train to [Oakland International Airport]{"entity":"station_name"}
+    - last train to [Orinda]{"entity":"station_name"}
+    - last train to [Pittsburg Bay Point]{"entity":"station_name"}
+    - when is the next train to [Pittsburg Center]{"entity":"station_name"}
+    - when is the next train to [Pleasant Hill/Contra Costa Centre]{"entity":"station_name"}
+    - last train to [Powell St]{"entity":"station_name"}
+    - when is the next train to [Richmond]{"entity":"station_name"}
+    - last train to [Rockridge]{"entity":"station_name"}
+    - when is the next train to [San Bruno]{"entity":"station_name"}
+    - when is the next train to [San Francisco International Airport]{"entity":"station_name"}
+    - when is the next train to [SFO]{"entity":"station_name"}
+    - when is the next train to [airport]{"entity":"station_name"}
+    - last train to [San Leandro]{"entity":"station_name"}
+    - last train to [South Hayward]{"entity":"station_name"}
+    - last train to [South San Francisco]{"entity":"station_name"}
+    - last train to [Union City]{"entity":"station_name"}
+    - last train to [Walnut Creek]{"entity":"station_name"}
+    - when is the next train to [Warm Springs South Fremont]{"entity":"station_name"}
+    - when is the next train to [West Dublin Pleasanton]{"entity":"station_name"}
+    - last train to [West Oakland]{"entity":"station_name"}
+- intent: ask_last_train
+  examples: |
+    - last train to [12th St. Oakland City Center]{"entity":"station_name"}
+    - last train to [16th St. Mission]{"entity":"station_name"}
+    - last train to [19th St. Oakland]{"entity":"station_name"}
+    - when is the last train to [24th St. Mission]{"entity":"station_name"}
+    - when is the last train to [Antioch]{"entity":"station_name"}
+    - last train to [Ashby]{"entity":"station_name"}
+    - last train to [Balboa Park]{"entity":"station_name"}
+    - last train to [Bay Fair]{"entity":"station_name"}
+    - when is the last train to [Berryessa North San Jose]{"entity":"station_name"}
+    - last train to [Castro Valley]{"entity":"station_name"}
+    - when is the last train to [Civic Center UN Plaza]{"entity":"station_name"}
+    - last train to [Coliseum]{"entity":"station_name"}
+    - last train to [Colma]{"entity":"station_name"}
+    - when is the last train to [Concord]{"entity":"station_name"}
+    - when is the last train to [Daly City]{"entity":"station_name"}
+    - last train to [Downtown Berkeley]{"entity":"station_name"}
+    - last train to [Dublin Pleasanton]{"entity":"station_name"}
+    - when is the last train to [El Cerrito del Norte]{"entity":"station_name"}
+    - when is the last train to [El Cerrito Plaza]{"entity":"station_name"}
+    - when is the last train to [Embarcadero]{"entity":"station_name"}
+    - when is the last train to [Fremont]{"entity":"station_name"}
+    - last train to [Fruitvale]{"entity":"station_name"}
+    - when is the last train to [Glen Park]{"entity":"station_name"}
+    - last train to [Hayward]{"entity":"station_name"}
+    - when is the last train to [Lafayette]{"entity":"station_name"}
+    - when is the last train to [Lake Merritt]{"entity":"station_name"}
+    - when is the last train to [MacArthur]{"entity":"station_name"}
+    - when is the last train to [Millbrae]{"entity":"station_name"}
+    - last train to [Milpitas]{"entity":"station_name"}
+    - when is the last train to [Montgomery St]{"entity":"station_name"}
+    - last train to [North Berkeley]{"entity":"station_name"}
+    - last train to [North Concord/Martinez]{"entity":"station_name"}
+    - when is the last train to [Oakland International Airport]{"entity":"station_name"}
+    - when is the last train to [Orinda]{"entity":"station_name"}
+    - when is the last train to [Pittsburg Bay Point]{"entity":"station_name"}
+    - last train to [Pittsburg Center]{"entity":"station_name"}
+    - last train to [Pleasant Hill/Contra Costa Centre]{"entity":"station_name"}
+    - last train to [Powell St]{"entity":"station_name"}
+    - last train to [Richmond]{"entity":"station_name"}
+    - last train to [Rockridge]{"entity":"station_name"}
+    - last train to [San Bruno]{"entity":"station_name"}
+    - last train to [San Francisco International Airport]{"entity":"station_name"}
+    - last train to [San Leandro]{"entity":"station_name"}
+    - when is the last train to [South Hayward]{"entity":"station_name"}
+    - last train to [South San Francisco]{"entity":"station_name"}
+    - last train to [Union City]{"entity":"station_name"}
+    - last train to [Walnut Creek]{"entity":"station_name"}
+    - last train to [Warm Springs South Fremont]{"entity":"station_name"}
+    - last train to [West Dublin Pleasanton]{"entity":"station_name"}
+    - last train to [West Oakland]{"entity":"station_name"}
